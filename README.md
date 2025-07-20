@@ -16,6 +16,7 @@ Le processus est simple et intuitif :
 
 Le système bloque automatiquement toute tentative de publicité ou de spam, et alerte les modérateurs en cas de lien suspect.
 
+Le bot utilise exclusivement des commandes slash (full slash commands) pour une meilleure intégration et ergonomie.
 ---
 
 ## Fonctionnalités principales
