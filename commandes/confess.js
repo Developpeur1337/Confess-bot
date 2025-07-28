@@ -26,7 +26,7 @@ module.exports = {
 
     try {
       const dm = await interaction.user.createDM();
-      const collected = await dm.awaitMessages({ filter: m => m.author.id === interaction.user.id, max: 1, time: 10000, errors: ["time"] });
+      const collected = await dm.awaitMessages({ filter: m => m.author.id === interaction.user.id, max: 1, time: 300000, errors: ["time"] });
 
       if (!collected?.size) {
         await interaction.user.send({ embeds: [new EmbedBuilder().setDescription("<:990not:1371830095391756379> Temps écoulé, confession annulée.").setColor(0xFF0000)] }).catch(() => null);
